@@ -1,0 +1,102 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}"> <!-- home.css -->
+{% endblock %}
+
+{% block content %}
+    <!-- Particle Background -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Home Section -->
+    <section class="home-section" id="home">
+        <div class="container-fluid">
+            <div class="container home-content">
+                <div class="row align-items-center">
+                    <div class="col-md-7 home-header">
+                        <h1 class="heading" style="padding-bottom: 15px;">
+                            Hi There! 
+                            <span class="wave" role="img" aria-label="wave">👋🏻</span>
+                        </h1>
+
+                        <h1 class="heading-name">
+                            I'M
+                            <strong class="main-name"> ALALOU Hamid</strong>
+                        </h1>
+
+                        <div style="padding: 50px 0; text-align: left;">
+                            <div class="typewriter" id="typewriter"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5" style="padding-bottom: 20px; margin-top: 50px;">
+                        <!--<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiByeD0iMjAiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjIwMCIgcj0iMTAwIiBmaWxsPSJ1cmwoI2dyYWRpZW50MV9yYWRpYWxfMV8xKSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDBfbGluZWFyXzFfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNDAwIiB5Mj0iNDAwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNjNzcwZjAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjOGI1ZmJmIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyYWRpYWxHcmFkaWVudCBpZD0iZ3JhZGllbnQxX3JhZGlhbF8xXzEiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgo8c3RvcCBzdG9wLWNvbG9yPSJ3aGl0ZSIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSJ3aGl0ZSIgc3RvcC1vcGFjaXR5PSIwIi8+CjwvcmFkaWFsR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==" 
+                             alt="home pic" 
+                             class="img-fluid" 
+                             style="max-height: 450px;"> -->
+                            <img src="{% static 'images/home-main.svg' %}" alt="home pic" class="img-fluid" style="max-height: 450px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home2 Section (About) -->
+    <section class="home2-section" id="about">
+        <div class="container-fluid">
+            <div class="container" >
+                <div class="row align-items-center">
+                    <div class="col-md-8 home2-content">
+                        <h1 class="centered-heading">
+                            LET ME <span class="blue">INTRODUCE</span> MYSELF
+                        </h1>
+                        <p class="home-about-body">
+                            I've fallen in love with programming especially where <b class="blue">Python meets AI</b>. Every line of code feels like a step toward building something meaningful. 🤖
+                            <br><br>
+                            I specialize in <b class="blue">Python</b>, with hands-on experience in data pipelines, API development, and AI/ML frameworks. Currently at an intermediate level, I'm actively sharpening my skills in AI/ML systems and clean architecture.
+                            <br><br>
+                            My field of Interest's are building <i><b class="blue">AI-driven solutions</b></i> and exploring the potential of <i><b class="blue">Generative AI</b></i>.
+                            <br><br>
+                            Whenever possible, I apply my passion for developing tools with <b class="blue">PyTorch, TensorFlow</b>, and modern frameworks like <i><b class="blue">LangChain and Hugging Face</b></i>. I thrive on turning complex models into <b class="blue">practical applications</b>.
+                        </p>
+                    </div>
+                    <div class="col-md-4 myAvtar text-center">
+                        <img src="{% static 'images/avatar.svg' %}" class="img-fluid" alt="avatar">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 home-about-social">
+                        <h1 style="font-size: 1.6rem; font-weight: 500; text-align: center; margin: 0.5rem 0;">FIND ME ON</h1>
+                        <p>Feel free to <span class="blue">connect</span> with me</p>
+                        <ul class="home-about-social-links">
+                            <li class="social-icons">
+                                <a href="https://github.com/Hamid-AL" target="_blank" rel="noreferrer" class="home-social-icons">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="social-icons">
+                                <a href="https://x.com/hamid_lou01" target="_blank" rel="noreferrer" class="home-social-icons">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-icons">
+                                <a href="https://www.linkedin.com/in/hamid-alalou-b60306235/" target="_blank" rel="noreferrer" class="home-social-icons">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="social-icons">
+                                <a href="https://www.instagram.com/mid_lou01/" target="_blank" rel="noreferrer" class="home-social-icons">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}"> <!-- projects.css -->
+{% endblock %}
+
+{% block content %}
+    <!-- Particle Background -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Projects Section -->
+    <section class="project-section">
+        <div class="container-fluid">
+            <div class="container">
+                <!-- Page Header -->
+                <h1 class="project-heading">
+                    My Recent <strong class="blue">Works</strong>
+                </h1>
+                <p class="project-intro">
+                    Here are a few projects I've worked on recently.
+                </p>
+
+                <!-- Projects Row -->
+                <div class="row" style="justify-content: center; padding-bottom: 10px;">
+                    
+                    <!-- Project 1: Plant AI -->
+                    <div class="col-md-4 project-card">
+                        <div class="project-card-view">
+                            <div class="project-card-img">
+                                <img src="{% static 'images/leaf.png' %}" alt="Face Recognition Project" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-card-body">
+                                <h3 class="project-card-title">Plant AI</h3>
+                                <p class="project-card-text">
+                                    Used the plant disease dataset from Kaggle and trained a image classifier model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model.
+                                </p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/soumyajit4419/Plant_AI" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer" 
+                                       class="project-btn">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                    <a href="https://plant49-ai.herokuapp.com/" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer" 
+                                       class="project-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Face Recognition and Emotion Detection -->
+                    <div class="col-md-4 project-card">
+                        <div class="project-card-view">
+                            <div class="project-card-img">
+                               <img src="{% static 'images/emotion.png' %}" alt="Face Recognition Project">
+                            </div>
+                            <div class="project-card-body">
+                                <h3 class="project-card-title">Face Recognition and Emotion Detection</h3>
+                                <p class="project-card-text">
+                                    Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backend. The classifier successfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%. Then used Open-CV to detect the face in an image and then pass the face to the classifier to predict the emotion of a person.
+                                </p>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/soumyajit4419/Face_And_Emotion_Detection" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer" 
+                                       class="project-btn">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more projects here if needed -->
+                    <!-- Example of how to add a third project: -->
+                    <!--
+                    <div class="col-md-4 project-card">
+                        <div class="project-card-view">
+                            <div class="project-card-img">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-card-body">
+                                <h3 class="project-card-title">Your Next Project</h3>
+                                <p class="project-card-text">
+                                    Description of your next project...
+                                </p>
+                                <div class="project-buttons">
+                                    <a href="#" target="_blank" class="project-btn">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                    <a href="#" target="_blank" class="project-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/projects.js' %}"></script>
+
+{% endblock %}

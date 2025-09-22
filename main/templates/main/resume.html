@@ -1,0 +1,31 @@
+{% extends 'main/base.html' %}
+
+{% block extra_head %}
+    <style>
+        :root {
+            --primary-color: #4a86e8;        /* Main blue */
+            --secondary-color: #3b5998;      /* Darker blue */
+            --tertiary-color: #6fa8dc;       /* Lighter blue */
+            --bg-color: #002e84d7;
+            --text-color: #c9d1d9;
+            --card-bg: #161b22;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            color: #f5eeee;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1>
+        Resume Page
+    </h1>
+{% endblock %}

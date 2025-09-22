@@ -1,0 +1,46 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+
+# Django migrations (optional: you might want to keep them in repo)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database files (for local dev)
+*.sqlite3
+
+# Static & media files (optional: if you don't want to track uploaded files)
+staticfiles/
+media/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Test / temp files
+.pytest_cache/
+*.tmp
+*.bak
+*.swp
+
+# Environment variables
+.env
