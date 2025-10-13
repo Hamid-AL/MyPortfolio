@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Bruyerre - About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Sharlee</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+            <!-- Profile Image Section -->
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <div class="profile-circle">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" style="--delay: 0s; --x: -30px; --y: -30px;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s; --x: 30px; --y: -20px;">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 2s; --x: -40px; --y: 20px;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 3s; --x: 35px; --y: 25px;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-content">
+                <h1 class="about-title">
+                    About <span class="highlight">Me</span>
+                </h1>
+                
+                <div class="about-text">
+                    <p>
+                        Hello, my name is <strong>Alalou Hamid</strong> an engineer driven by curiosity and a deep passion for technology and innovation.
+                    </p>
+                    <p>
+                        I love exploring how artificial intelligence and data can be used to create meaningful, intelligent systems that make life simpler and smarter.
+                    </p>
+                    <p>
+                        Over the years, I’ve developed a strong interest in solving real-world problems, learning new concepts, and pushing ideas from imagination to implementation.
+                        Beyond coding, I enjoy discovering new perspectives, collaborating with creative people, and continuously growing both personally and professionally.
+                    </p>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skills-section">
+                    <h3><i class="fas fa-tools"></i> Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Deep Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>NLP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Software Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Data Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Download Button -->
+                <div class="resume-section">
+                    <h3><i class="fas fa-download"></i> Download Resume</h3>
+                    <a href="#" class="resume-btn" id="resumeBtn">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Download CV</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <p class="resume-note">Get a detailed overview of my experience and projects</p>
+                </div>
+
+                <!-- Contact CTA -->
+                <div class="about-cta">
+                    <a href="contact.html" class="cta-btn">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="projects.html" class="cta-btn secondary">
+                        <i class="fas fa-folder-open"></i>
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fun Facts Section -->
+        <div class="fun-facts">
+            <h2>Fun Facts About Me</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h4>Music Lover</h4>
+                    <p>Passionate about pop music and creating visual universes inspired by what I listen to</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Continuous Learner</h4>
+                    <p>Always exploring new technologies and creative coding techniques</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Problem Solver</h4>
+                    <p>Love tackling complex challenges with innovative AI solutions</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4>Creative Coder</h4>
+                    <p>Combining technical skills with artistic expression in my projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/about.js"></script>
+</body>
+</html>
