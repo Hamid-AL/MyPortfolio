@@ -3,7 +3,7 @@
 
 {% block extra_head %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="{% static 'css/about.css' %}"> <!---about.css-->
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -14,221 +14,232 @@
     <section class="about-section">
         <div class="container-fluid">
             <div class="container">
-                <!-- About Card and Image Row -->
-                <div class="row align-items-center">
-                    <div class="col-md-7">
-                        <h1 style="font-size: 2.1em; padding-bottom: 20px;">
-                            Know Who <strong class="blue">I'M</strong>
+                <!-- About Me Header -->
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1 class="main-heading">
+                            About <strong class="blue">Me</strong>
                         </h1>
-                        
-                        <!-- About Content -->
-                        <div style="text-align: justify; font-size: 1.1rem; line-height: 1.8;">
-                            <p>
-                                Hi everyone, I'm <span class="blue">Alalou Hamid</span>
-                                from <span class="blue">Tinghir, Morocco</span>.
-                                <br />
-                                I'm a passionate Python developer specializing in AI and generative models.
-                                <br />
-                                With a background in <span class="blue">Computer Science</span>,
-                                I focus on building practical AI solutions.
-                                <br />
-                                <br />
-                                When I'm not coding, you can find me:
-                            </p>
-                            <ul style="list-style: none; padding-left: 0;">
-                                <li class="about-activity">
-                                    <i class="fas fa-futbol"></i> Playing Football
-                                </li>
-                                <li class="about-activity">
-                                    <i class="fas fa-film"></i> Watching Movies
-                                </li>
-                                <li class="about-activity">
-                                    <i class="fas fa-brain"></i> Learning about cutting-edge ML/AI technologies
-                                </li>
-                            </ul>
-
-                            <p style="color: var(--tertiary-color); font-style: italic; margin-top: 30px;">
-                                "Still learning, always building. The best code is the next one I'll write!"
-                            </p>
-                            <p style="color: var(--primary-color); font-weight: 500;">
-                                - Alalou Hamid
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-5 about-img text-center">
-                        <img src="{% static 'images/about.png' %}"
-                                alt="about" 
-                                class="img-fluid">
+                        <p class="lead-text">Get to know my story, background, and journey</p>
                     </div>
                 </div>
 
-                <!-- Professional Skillset -->
-                <h1 class="project-heading">
-                    Professional <strong class="blue">Skillset</strong>
-                </h1>
-
-                <!-- Tech Stack -->
-                <div class="row" style="justify-content: center; padding-bottom: 50px;">
-                    <!-- Python -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-python-plain"></i>
-                            <span class="tooltip-text">Python</span>
+                <!-- Professional Bio Section -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-8">
+                        <div class="bio-section">
+                            <h2 class="section-title">
+                                <i class="fas fa-user-tie"></i>
+                                Professional Bio
+                            </h2>
+                            <div class="bio-content">
+                                <p>
+                                    Hello! I'm <span class="blue">Alalou Hamid</span>, a passionate <strong>State Engineer</strong> 
+                                    specializing in <span class="blue">Business Intelligence and Analytics</span> from Morocco's 
+                                    National School of Computer Science and Systems Analysis.
+                                </p>
+                                <p>
+                                    My expertise lies in <span class="blue">AI, Machine Learning, and NLP</span>, with a particular 
+                                    focus on developing practical solutions that bridge the gap between complex data and 
+                                    actionable business insights. I thrive on transforming raw data into meaningful narratives 
+                                    and building intelligent systems that drive decision-making.
+                                </p>
+                                <p>
+                                    Currently, I'm dedicated to advancing my skills in <span class="blue">generative AI</span> 
+                                    and <span class="blue">natural language processing</span>, working on projects that 
+                                    leverage cutting-edge technologies like PyTorch, TensorFlow, LangChain, and Hugging Face.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- PostgreSQL -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-postgresql-plain"></i>
-                            <span class="tooltip-text">PostgreSQL</span>
-                        </div>
-                    </div>
-                    
-                    <!-- MongoDB -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-mongodb-plain"></i>
-                            <span class="tooltip-text">MongoDB</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Git -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-git-plain"></i>
-                            <span class="tooltip-text">Git</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Azure -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-azure-plain"></i>
-                            <span class="tooltip-text">Azure</span>
+                    <div class="col-md-4 text-center">
+                        <div class="profile-image-container">
+                            <img src="{% static 'images/about.png' %}" alt="Hamid Alalou" class="profile-image">
                         </div>
                     </div>
                 </div>
 
-                <!-- Tools Section -->
-                <h1 class="project-heading">
-                    <strong class="blue">Tools</strong> I use
-                </h1>
+                <!-- Education Timeline -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education Timeline
+                        </h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>State Engineer in Business Intelligence and Analytics</h4>
+                                    <p class="institution">National School of Computer Science and Systems Analysis</p>
+                                    <p class="timeline-description">
+                                        Specialized in data analytics, business intelligence, and AI systems development.
+                                        Focused on practical applications of machine learning and data science.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Preparatory Cycle in Mathematics and Physics (MP)</h4>
+                                    <p class="institution">Ibn Tahir High School</p>
+                                    <p class="timeline-description">
+                                        Intensive two-year program building strong foundations in mathematics and physics,
+                                        preparing for engineering studies.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Baccalaureate in Mathematical Sciences A</h4>
+                                    <p class="institution">Idriss Premier High School</p>
+                                    <p class="timeline-description">
+                                        Graduated with honors in mathematical sciences, laying the groundwork for 
+                                        analytical thinking and problem-solving skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- Tool Stack -->
-                <div class="row" style="justify-content: center; padding-bottom: 50px;">
-                    <!-- Linux -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-linux-plain"></i>
-                            <span class="tooltip-text">Linux</span>
+                <!-- Core Skills -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="section-title">
+                            <i class="fas fa-cogs"></i>
+                            Core Skills & Strengths
+                        </h2>
+                        <div class="skills-grid">
+                            <div class="skill-badge">
+                                <i class="fas fa-users"></i>
+                                <h5>Team Collaboration</h5>
+                                <p>Working effectively in diverse, cross-functional teams</p>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-lightbulb"></i>
+                                <h5>Problem Solving</h5>
+                                <p>Analytical thinking and creative solution development</p>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-user-check"></i>
+                                <h5>Autonomy</h5>
+                                <p>Self-directed learning and independent project execution</p>
+                            </div>
+                            <div class="skill-badge">
+                                <i class="fas fa-brain"></i>
+                                <h5>AI & Machine Learning</h5>
+                                <p>Expertise in Python, PyTorch, TensorFlow, and NLP</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- VS Code -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-vscode-plain"></i>
-                            <span class="tooltip-text">VS Code</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Postman -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="https://cdn.simpleicons.org/postman/FF6C37" 
-                                    alt="Postman" 
-                                    class="img-fluid custom-icon">
-                            <span class="tooltip-text">Postman</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Slack -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-slack-plain"></i>
-                            <span class="tooltip-text">Slack</span>
-                        </div>
-                    </div>
-                    
-                    <!-- GitHub -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <i class="devicon-github-original"></i>
-                            <span class="tooltip-text">GitHub</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Docker -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="https://cdn.simpleicons.org/docker/2496ED" 
-                                    alt="Docker" 
-                                    class="img-fluid custom-icon">
-                            <span class="tooltip-text">Docker</span>
-                        </div>
-                    </div>
-                    
+                </div>
 
-                    <!-- Elasticsearch -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="https://cdn.simpleicons.org/elasticsearch/005571" 
-                                alt="Elasticsearch" 
-                                class="img-fluid custom-icon">
-                            <span class="tooltip-text">Elasticsearch</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Apache Airflow -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="https://cdn.simpleicons.org/apacheairflow/017CEE" 
-                                    alt="Apache Airflow" 
-                                    class="img-fluid custom-icon">
-                            <span class="tooltip-text">Airflow</span>
-                        </div>
-                    </div>
-                    <!-- Ollama (self-hosted, put logo in /static/icons/ollama.svg) -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="{% static 'images/icons/ollama.svg' %}" 
-                                alt="Ollama" 
-                                class="img-fluid custom-icon">
-                            <span class="tooltip-text">Ollama</span>
+                <!-- Languages & Interests -->
+                <div class="row">
+                    <!-- Languages -->
+                    <div class="col-md-6 mb-4">
+                        <h2 class="section-title">
+                            <i class="fas fa-language"></i>
+                            Languages
+                        </h2>
+                        <div class="languages-list">
+
+                            <!-- Arabic -->
+                            <div class="language-item mb-3 d-flex align-items-center">
+                                <span class="language-name me-3 fw-bold" style="min-width: 80px;">Arabic</span>
+                                <div class="progress flex-grow-1" style="height: 20px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" 
+                                        style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                        Native
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- English -->
+                            <div class="language-item mb-3 d-flex align-items-center">
+                                <span class="language-name me-3 fw-bold" style="min-width: 80px;">English</span>
+                                <div class="progress flex-grow-1" style="height: 20px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" 
+                                        style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        Fluent
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- French -->
+                            <div class="language-item mb-3 d-flex align-items-center">
+                                <span class="language-name me-3 fw-bold" style="min-width: 80px;">French</span>
+                                <div class="progress flex-grow-1" style="height: 20px;">
+                                    <div class="progress-bar bg-secondary" role="progressbar" 
+                                        style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        Fluent
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    
-            
-                    <!-- Hugging Face -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" 
-                                alt="Hugging Face" 
-                                class="img-fluid custom-icon">
-                            <span class="tooltip-text">Hugging Face</span>
+                    <!-- Personal Interests -->
+                    <div class="col-md-6 mb-4">
+                        <h2 class="section-title">
+                            <i class="fas fa-heart"></i>
+                            Personal Interests
+                        </h2>
+                        <div class="interests-list">
+                            <div class="interest-item">
+                                <i class="fas fa-futbol"></i>
+                                <span>Football</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-film"></i>
+                                <span>Movies</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-code"></i>
+                                <span>Competitive Programming</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-book"></i>
+                                <span>Reading</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- LangChain (self-hosted, no CDN yet) -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="{% static 'images/icons/langchain.svg' %}" 
-                                alt="LangChain" 
-                                class="img-fluid custom-icon">
-                            <span class="tooltip-text">LangChain</span>
-                        </div>
-                    </div>
-                    
-                    <!-- OpenAI -->
-                    <div class="col-4 col-md-2">
-                        <div class="tech-icons">
-                            <img src="https://cdn.simpleicons.org/openai/412991" 
-                                    alt="OpenAI" 
-                                    class="img-fluid custom-icon">
-                            <span class="tooltip-text">OpenAI</span>
+                </div>
+
+                <!-- Personal Values -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="values-section">
+                            <h2 class="section-title text-center">
+                                <i class="fas fa-compass"></i>
+                                My Values & Philosophy
+                            </h2>
+                            <div class="values-content">
+                                <div class="value-card">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h5>Continuous Learning</h5>
+                                    <p>Technology evolves rapidly, and I believe in staying curious and constantly expanding my knowledge.</p>
+                                </div>
+                                <div class="value-card">
+                                    <i class="fas fa-database"></i>
+                                    <h5>Data-Driven Solutions</h5>
+                                    <p>Every decision should be backed by data. I focus on creating solutions that provide measurable value.</p>
+                                </div>
+                                <div class="value-card">
+                                    <i class="fas fa-handshake"></i>
+                                    <h5>Collaborative Innovation</h5>
+                                    <p>The best solutions come from diverse perspectives working together towards common goals.</p>
+                                </div>
+                            </div>
+                            <div class="quote-section">
+                                <blockquote>
+                                    "Still learning, always building. The best code is the next one I'll write!"
+                                </blockquote>
+                                <cite>- Alalou Hamid</cite>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,9 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-
 {% block extra_head %}
-    <link rel="stylesheet" href="{% static 'css/projects.css' %}"> <!-- projects.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -15,99 +15,360 @@
         <div class="container-fluid">
             <div class="container">
                 <!-- Page Header -->
-                <h1 class="project-heading">
-                    My Recent <strong class="blue">Works</strong>
-                </h1>
-                <p class="project-intro">
-                    Here are a few projects I've worked on recently.
-                </p>
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1 class="main-heading">
+                            My <strong class="blue">Projects</strong>
+                        </h1>
+                        <p class="lead-text">A showcase of my best academic, personal, and professional work</p>
+                    </div>
+                </div>
 
-                <!-- Projects Row -->
-                <div class="row" style="justify-content: center; padding-bottom: 10px;">
+                <!-- Projects Grid -->
+                <div class="row justify-content-center">
                     
-                    <!-- Project 1: Plant AI -->
-                    <div class="col-md-4 project-card">
-                        <div class="project-card-view">
-                            <div class="project-card-img">
-                                <img src="{% static 'images/leaf.png' %}" alt="Face Recognition Project" style="width: 100%; height: 100%; object-fit: cover;">
+                    <!-- Project 1: Arabic-to-English Neural Machine Translation -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="project-card" data-aos="fade-up">
+                            <div class="project-image">
+                                <img src="{% static 'images/projects/translation.jpg' %}" alt="Neural Machine Translation" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-category">Academic Project</div>
+                                </div>
                             </div>
-                            <div class="project-card-body">
-                                <h3 class="project-card-title">Plant AI</h3>
-                                <p class="project-card-text">
-                                    Used the plant disease dataset from Kaggle and trained a image classifier model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model.
+                            <div class="project-content">
+                                <h3 class="project-title">Arabic-to-English Neural Machine Translation</h3>
+                                <p class="project-description">
+                                    Developed a neural machine translation system with attention mechanism for Arabic-to-English translation. 
+                                    Implemented encoder-decoder architecture with LSTM and attention layers to improve translation quality.
                                 </p>
-                                <div class="project-buttons">
-                                    <a href="https://github.com/soumyajit4419/Plant_AI" 
-                                       target="_blank" 
-                                       rel="noopener noreferrer" 
-                                       class="project-btn">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
+                                <div class="project-details">
+                                    <h5><i class="fas fa-cogs"></i> What I Built:</h5>
+                                    <ul>
+                                        <li>Seq2Seq model with attention mechanism</li>
+                                        <li>Custom preprocessing pipeline for Arabic text</li>
+                                        <li>BLEU score evaluation system</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <h5><i class="fas fa-tools"></i> Tech Stack:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag pytorch">
+                                            <i class="fas fa-fire"></i> PyTorch
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-language"></i> NLP
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-brain"></i> Deep Learning
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Hamid-AL/arabic-english-translation" target="_blank" class="project-btn github">
+                                        <i class="fab fa-github"></i> GitHub
                                     </a>
-                                    <a href="https://plant49-ai.herokuapp.com/" 
-                                       target="_blank" 
-                                       rel="noopener noreferrer" 
-                                       class="project-btn">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Demo
+                                    <a href="#" target="_blank" class="project-btn demo">
+                                        <i class="fas fa-external-link-alt"></i> Demo
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: Face Recognition and Emotion Detection -->
-                    <div class="col-md-4 project-card">
-                        <div class="project-card-view">
-                            <div class="project-card-img">
-                               <img src="{% static 'images/emotion.png' %}" alt="Face Recognition Project">
+                    <!-- Project 2: Interactive RAG-based Chatbot -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="project-image">
+                                <img src="{% static 'images/projects/chatbot.jpg' %}" alt="RAG Chatbot" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-category">Professional Project</div>
+                                </div>
                             </div>
-                            <div class="project-card-body">
-                                <h3 class="project-card-title">Face Recognition and Emotion Detection</h3>
-                                <p class="project-card-text">
-                                    Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backend. The classifier successfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%. Then used Open-CV to detect the face in an image and then pass the face to the classifier to predict the emotion of a person.
+                            <div class="project-content">
+                                <h3 class="project-title">Interactive RAG-based Chatbot</h3>
+                                <p class="project-description">
+                                    Built an intelligent chatbot using Retrieval-Augmented Generation (RAG) architecture. 
+                                    Integrated document retrieval with language models for contextually accurate responses.
                                 </p>
-                                <div class="project-buttons">
-                                    <a href="https://github.com/soumyajit4419/Face_And_Emotion_Detection" 
-                                       target="_blank" 
-                                       rel="noopener noreferrer" 
-                                       class="project-btn">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
+                                <div class="project-details">
+                                    <h5><i class="fas fa-cogs"></i> What I Built:</h5>
+                                    <ul>
+                                        <li>RAG pipeline with vector database</li>
+                                        <li>Interactive web interface with Streamlit</li>
+                                        <li>Document ingestion and chunking system</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <h5><i class="fas fa-tools"></i> Tech Stack:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-link"></i> LangChain
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-chart-line"></i> Streamlit
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-database"></i> Vector DB
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-robot"></i> OpenAI
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Hamid-AL/rag-chatbot" target="_blank" class="project-btn github">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                    <a href="#" target="_blank" class="project-btn demo">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Add more projects here if needed -->
-                    <!-- Example of how to add a third project: -->
-                    <!--
-                    <div class="col-md-4 project-card">
-                        <div class="project-card-view">
-                            <div class="project-card-img">
-                                <i class="fas fa-robot"></i>
+                    <!-- Project 3: Real-Time Tweet Analysis Pipeline -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="project-image">
+                                <img src="{% static 'images/projects/twitter.jpg' %}" alt="Tweet Analysis" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-category">Data Science Project</div>
+                                </div>
                             </div>
-                            <div class="project-card-body">
-                                <h3 class="project-card-title">Your Next Project</h3>
-                                <p class="project-card-text">
-                                    Description of your next project...
+                            <div class="project-content">
+                                <h3 class="project-title">Real-Time Tweet Analysis Pipeline</h3>
+                                <p class="project-description">
+                                    Developed a real-time data pipeline for Twitter sentiment analysis and trend detection. 
+                                    Processed streaming data with Apache Kafka and performed NLP analysis at scale.
                                 </p>
-                                <div class="project-buttons">
-                                    <a href="#" target="_blank" class="project-btn">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
-                                    </a>
-                                    <a href="#" target="_blank" class="project-btn">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Demo
+                                <div class="project-details">
+                                    <h5><i class="fas fa-cogs"></i> What I Built:</h5>
+                                    <ul>
+                                        <li>Real-time streaming data pipeline</li>
+                                        <li>Sentiment analysis with pre-trained models</li>
+                                        <li>Interactive dashboard for trend visualization</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <h5><i class="fas fa-tools"></i> Tech Stack:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-stream"></i> Apache Kafka
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-search"></i> Elasticsearch
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-chart-bar"></i> Pandas
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-language"></i> NLTK
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Hamid-AL/twitter-analysis" target="_blank" class="project-btn github">
+                                        <i class="fab fa-github"></i> GitHub
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    -->
-                    
+
+                    <!-- Project 4: YOLO Card Detection System -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="project-image">
+                                <img src="{% static 'images/projects/yolo.jpg' %}" alt="YOLO Detection" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-category">Computer Vision</div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">YOLO Card Detection System</h3>
+                                <p class="project-description">
+                                    Implemented a real-time playing card detection system using YOLO architecture. 
+                                    Trained custom model to identify and classify different playing cards with high accuracy.
+                                </p>
+                                <div class="project-details">
+                                    <h5><i class="fas fa-cogs"></i> What I Built:</h5>
+                                    <ul>
+                                        <li>Custom YOLO model training pipeline</li>
+                                        <li>Real-time detection with webcam integration</li>
+                                        <li>Data annotation and augmentation tools</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <h5><i class="fas fa-tools"></i> Tech Stack:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-eye"></i> YOLO
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-camera"></i> OpenCV
+                                        </span>
+                                        <span class="tech-tag pytorch">
+                                            <i class="fas fa-fire"></i> PyTorch
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/Hamid-AL/yolo-card-detection" target="_blank" class="project-btn github">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                    <a href="#" target="_blank" class="project-btn demo">
+                                        <i class="fas fa-play"></i> Video Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Legacy Projects (Original ones) -->
+                    <!-- Project 5: Plant AI -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                            <div class="project-image">
+                                <img src="{% static 'images/leaf.png' %}" alt="Plant AI" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-category">Machine Learning</div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Plant AI Disease Detection</h3>
+                                <p class="project-description">
+                                    Image classification model using CNN and Transfer Learning to detect plant diseases. 
+                                    Achieved 98% accuracy using ResNet34 pretrained model on 38 classes of plant leaves.
+                                </p>
+                                <div class="project-details">
+                                    <h5><i class="fas fa-cogs"></i> What I Built:</h5>
+                                    <ul>
+                                        <li>CNN model with transfer learning</li>
+                                        <li>Data preprocessing and augmentation pipeline</li>
+                                        <li>Web deployment with model serving</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <h5><i class="fas fa-tools"></i> Tech Stack:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag pytorch">
+                                            <i class="fas fa-fire"></i> PyTorch
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-leaf"></i> ResNet34
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-globe"></i> Heroku
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/soumyajit4419/Plant_AI" target="_blank" class="project-btn github">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                    <a href="https://plant49-ai.herokuapp.com/" target="_blank" class="project-btn demo">
+                                        <i class="fas fa-external-link-alt"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Face Recognition -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="1000">
+                            <div class="project-image">
+                                <img src="{% static 'images/emotion.png' %}" alt="Face Recognition" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-category">Computer Vision</div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Face Recognition & Emotion Detection</h3>
+                                <p class="project-description">
+                                    CNN classifier trained on FER-2013 dataset for emotion recognition. 
+                                    Integrated OpenCV for face detection and real-time emotion prediction with 60.1% accuracy.
+                                </p>
+                                <div class="project-details">
+                                    <h5><i class="fas fa-cogs"></i> What I Built:</h5>
+                                    <ul>
+                                        <li>CNN emotion classifier</li>
+                                        <li>Real-time face detection pipeline</li>
+                                        <li>Emotion prediction system</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-stack">
+                                    <h5><i class="fas fa-tools"></i> Tech Stack:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-brain"></i> Keras
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-camera"></i> OpenCV
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-chart-line"></i> TensorFlow
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/soumyajit4419/Face_And_Emotion_Detection" target="_blank" class="project-btn github">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Summary -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="projects-summary">
+                            <h3 class="text-center mb-4">
+                                <i class="fas fa-lightbulb"></i>
+                                Project Highlights
+                            </h3>
+                            <div class="summary-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">6</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5+</div>
+                                    <div class="stat-label">Technologies Used</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Best Model Accuracy</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">3</div>
+                                    <div class="stat-label">Domains Covered</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

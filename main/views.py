@@ -16,3 +16,6 @@ def resume(request):
 
 def projects(request):
     return render(request, "main/projects.html")
+
+def experience(request):
+    return render(request, "main/experience.html")

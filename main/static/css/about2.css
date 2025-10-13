@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #4a86e8;        /* Main blue */
+    --secondary-color: #3b5998;      /* Darker blue */
+    --tertiary-color: #6fa8dc;       /* Lighter blue */
+    --bg-color: #1c2533;
+    --text-color: #c9d1d9;
+    --card-bg: #161b22;
+}
+
+/*body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}*/
+
+body {
+    background-image: url(../images/er_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Particle Background */
+.particles-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary-color), var(--tertiary-color));
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.1;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* About Section */
+.about-section {
+    min-height: 100vh;
+    padding: 100px 0 50px;
+    position: relative;
+}
+
+.project-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0 3rem;
+    color: var(--text-color);
+}
+
+.blue {
+    color: var(--primary-color);
+}
+
+.about-img img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.02);
+}
+
+.about-activity {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.about-activity i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Tech Icons */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--card-bg), #1a2029);
+    box-shadow: 5px 5px 15px #0a0d12, -5px -5px 15px #222932;
+    transition: all 0.3s ease;
+    margin: 15px auto;
+    position: relative;
+    opacity: 0;              /* for animation */
+    transform: translateY(20px); /* for animation */
+}
+
+.tech-icons:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(74, 134, 232, 0.3);
+}
+
+.tech-icons i {
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.tech-icons:hover i {
+    transform: scale(1.2);
+}
+
+/* Specific technology colors */
+.devicon-python-plain {
+    color: #3776AB;
+}
+
+.devicon-postgresql-plain {
+    color: #336791;
+}
+
+.devicon-mongodb-plain {
+    color: #47A248;
+}
+
+.devicon-git-plain {
+    color: #F05032;
+}
+
+.devicon-azure-plain {
+    color: #0089D6;
+}
+
+.devicon-linux-plain {
+    color: #FCC624;
+}
+
+.devicon-vscode-plain {
+    color: #007ACC;
+}
+
+.devicon-github-original {
+    color: #ffffff;
+}
+
+.devicon-docker-plain {
+    color: #2496ED;
+}
+
+.tool-icon {
+    color: var(--tertiary-color);
+}
+
+/* Tooltip */
+.tooltip-text {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+.tech-icons:hover .tooltip-text {
+    opacity: 1;
+}
+
+/* Custom image icons (like OpenAI, HuggingFace, etc.) */
+.custom-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-heading {
+        font-size: 2rem;
+    }
+
+    .tech-icons {
+        width: 80px;
+        height: 80px;
+        margin: 10px auto;
+    }
+
+    .tech-icons i {
+        font-size: 2rem;
+    }
+}

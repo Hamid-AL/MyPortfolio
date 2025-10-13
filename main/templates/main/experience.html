@@ -1,0 +1,261 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="{% static 'css/experience.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!-- Particle Background -->
+    <div class="particles-bg" id="particles"></div>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container-fluid">
+            <div class="container">
+                <!-- Page Header -->
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1 class="main-heading">
+                            Professional <strong class="blue">Experience</strong>
+                        </h1>
+                        <p class="lead-text">My journey through the world of AI and data science</p>
+                    </div>
+                </div>
+
+                <!-- Experience Timeline -->
+                <div class="experience-timeline">
+                    
+                    <!-- Hoploud Experience -->
+                    <div class="experience-card current-role" data-aos="fade-up">
+                        <div class="experience-header">
+                            <div class="role-info">
+                                <h3 class="role-title">Python Developer – Generative AI</h3>
+                                <h4 class="company-name">
+                                    <i class="fas fa-building"></i>
+                                    Hoploud
+                                </h4>
+                                <div class="date-location">
+                                    <span class="date">Oct 2024 – Present</span>
+                                    <span class="location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Casablanca, Morocco
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="current-badge">
+                                <span>Current Role</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-content">
+                            <!-- Project 1 -->
+                            <div class="project-section">
+                                <h5 class="project-title">
+                                    <i class="fas fa-project-diagram"></i>
+                                    Graph-based RAG System with LightRAG
+                                </h5>
+                                <ul class="achievement-list">
+                                    <li>Deployed and optimized the LightRAG framework locally</li>
+                                    <li>Enhanced performance via improved chunking strategies, batch processing, and LLM retry/fallback mechanisms</li>
+                                    <li>Configured LLMs to provide real-time responses</li>
+                                </ul>
+                                <div class="tools-used">
+                                    <span class="tools-label">Tools:</span>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag azure">
+                                            <i class="devicon-azure-plain"></i> Azure OpenAI
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-search"></i> Azure Cognitive Search
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-comments"></i> Prompt Engineering
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-chart-line"></i> Streamlit
+                                        </span>
+                                        <span class="tech-tag docker">
+                                            <i class="devicon-docker-plain"></i> Docker
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="project-section">
+                                <h5 class="project-title">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Access Control Layer for MCP Servers
+                                </h5>
+                                <ul class="achievement-list">
+                                    <li>Implemented an access control layer within the Model Context Protocol (MCP)</li>
+                                    <li>Enabled administrators to assign tool, prompt, and resource permissions per client</li>
+                                </ul>
+                                <div class="tools-used">
+                                    <span class="tools-label">Tools:</span>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag python">
+                                            <i class="devicon-python-plain"></i> Python
+                                        </span>
+                                        <span class="tech-tag gitlab">
+                                            <i class="devicon-gitlab-plain"></i> GitLab
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-network-wired"></i> Model Context Protocol
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-code"></i> Software Design Patterns
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Effyis Group Experience -->
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="experience-header">
+                            <div class="role-info">
+                                <h3 class="role-title">Data Scientist - Internship</h3>
+                                <h4 class="company-name">
+                                    <i class="fas fa-building"></i>
+                                    Effyis Group
+                                </h4>
+                                <div class="date-location">
+                                    <span class="date">2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-content">
+                            <div class="project-section">
+                                <h5 class="project-title">
+                                    <i class="fas fa-file-alt"></i>
+                                    Log Summarization with LLMs
+                                </h5>
+                                <ul class="achievement-list">
+                                    <li>Developed a solution for exploiting and summarizing software logs using language models</li>
+                                    <li>Fine-tuned LLMs to make them specific to the task of log summarization and report generation</li>
+                                </ul>
+                                <div class="tools-used">
+                                    <span class="tools-label">Tools:</span>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">
+                                            <i class="fas fa-brain"></i> Large Language Models
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-language"></i> NLP
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-rocket"></i> Fast API
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-search"></i> Elasticsearch
+                                        </span>
+                                        <span class="tech-tag pytorch">
+                                            <i class="fas fa-fire"></i> PyTorch
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brams Experience -->
+                    <div class="experience-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="experience-header">
+                            <div class="role-info">
+                                <h3 class="role-title">Data Scientist - Internship</h3>
+                                <h4 class="company-name">
+                                    <i class="fas fa-building"></i>
+                                    Brams
+                                </h4>
+                                <div class="date-location">
+                                    <span class="date">2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-content">
+                            <div class="project-section">
+                                <h5 class="project-title">
+                                    <i class="fas fa-tags"></i>
+                                    Topic Modeling for Article Classification
+                                </h5>
+                                <ul class="achievement-list">
+                                    <li>Created a topic modeling model for the classification of negative articles</li>
+                                    <li>Integrated models into a web application</li>
+                                </ul>
+                                <div class="tools-used">
+                                    <span class="tools-label">Tools:</span>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">
+                                            <i class="fas fa-sitemap"></i> Topic Modeling
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-language"></i> NLP
+                                        </span>
+                                        <span class="tech-tag">
+                                            <i class="fas fa-robot"></i> BERTopic
+                                        </span>
+                                        <span class="tech-tag azure">
+                                            <i class="devicon-azure-plain"></i> Azure ML
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Section -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="experience-summary">
+                            <h3 class="summary-title">
+                                <i class="fas fa-chart-line"></i>
+                                Professional Growth
+                            </h3>
+                            <p class="summary-text">
+                                Throughout my professional journey, I've specialized in <span class="blue">AI and Machine Learning</span> 
+                                with a focus on <span class="blue">Natural Language Processing</span> and <span class="blue">Generative AI</span>. 
+                                My experience spans from traditional topic modeling to cutting-edge RAG systems and LLM fine-tuning, 
+                                consistently delivering solutions that bridge theoretical AI concepts with practical business applications.
+                            </p>
+                            
+                            <div class="key-skills">
+                                <h4>Key Technical Areas:</h4>
+                                <div class="skill-categories">
+                                    <div class="skill-category">
+                                        <i class="fas fa-brain"></i>
+                                        <span>Generative AI & LLMs</span>
+                                    </div>
+                                    <div class="skill-category">
+                                        <i class="fas fa-search"></i>
+                                        <span>RAG Systems</span>
+                                    </div>
+                                    <div class="skill-category">
+                                        <i class="fas fa-language"></i>
+                                        <span>Natural Language Processing</span>
+                                    </div>
+                                    <div class="skill-category">
+                                        <i class="fas fa-database"></i>
+                                        <span>Data Science</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/experience.js' %}"></script>
+{% endblock %}

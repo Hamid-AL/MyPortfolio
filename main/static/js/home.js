@@ -25,8 +25,8 @@ function typeWriter() {
     const texts = [
         "AI/ML Engineer",
         "Python Developer", 
-        "Data Scientist",
-        "Backend Developer"
+        "Backend Developer",
+        "Generative AI Enthusiast"
     ];
     
     let textIndex = 0;
